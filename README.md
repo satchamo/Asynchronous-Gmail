@@ -9,6 +9,7 @@ Setup
 In a Django environment:
 -
 In your settings.py file, create two variables:
+
     GMAIL_USERNAME = 'username@gmail.com'
     GMAIL_PASSWORD = 'your_PaSsWoRd'
 
@@ -20,10 +21,10 @@ Remove `from django.conf import settings` from gmail.py, and set the
 
 Example Usage
 =
-import gmail
-to = "someone@example.com"
-subject = "Hey!"
-body = "Have a great day"
-html = "Have a <strong>great</strong> day"
-gmail.send(to, subject, body, html)
+    import gmail
+    to = "someone@example.com"
+    subject = "Hey!"
+    body = "Have a great day"
+    html = "Have a <strong>great</strong> day"
+    gmail.send(to, subject, body, html)
 
